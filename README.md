@@ -1,5 +1,5 @@
 # so9-partition-functions
-This repository contains the Mathematica, Python code used in the project along with the necessary dependencies required for running the scripts.
+This repository contains the Mathematica and Python code used in the project along with the necessary dependencies required for running the scripts.
 
 > "The growth of $SO(9)$ super-representations in Type II string theory"
 
