@@ -9,7 +9,9 @@ We study the growth of massive $SO(9)$ super-representations in type II and type
 ## Repository structure 
 ...
 ## Requirements 
-...
+### Python 
+- Python 3.14.4 (tested)
+- No third-party packages are required.
 ## Usage
 ...
 ## Citation
