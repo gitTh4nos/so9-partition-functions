@@ -33,6 +33,9 @@ so9-partition-functions/
 │
 └── README.md
 ```
+Data files produced by the python codes and the Wolfram scripts are provided in `DataFiles/`
+and the reader can skip directly to the notebooks if desired.
+
 ## Requirements 
 ### Mathematica 
 - Wolfram Mathematica 15.0 (tested)
@@ -55,7 +58,7 @@ to see information about the variety of flags that can be used in this script.
 ```bash
     python Python/representation_finite_n_multirep.py N L M R S
 ```
-where $L$ $M$ $R$ and $S$ are the four Dynkin indices.  For multiple files run: 
+where $L$, $M$, $R$, and $S$ are the four Dynkin indices.  For multiple files run: 
 ```bash 
     python Python/representation_finite_n_multirep.py N --rep-file FILE
 ```
@@ -86,12 +89,14 @@ To run from terminal on a Mac, add the following to your `.zprofile` file :
 ```bash
     PATH=$PATH:/Applications/Wolfram.app/Contents/MacOS
 ``` 
-To run from terminal on Windows, you have to have the directory containing `WolframKernel.exe` to your Windows `PATH`. For the `math_Code_d_batch.wl`, `coeff_gen_*.wl` wolfram scripts instructions on how to run are given in the in the beginning of the files. 
+To run from terminal on Windows, you have to have the directory containing `WolframKernel.exe` to your Windows `PATH`. For the `math_Code_simplified_batch.wl`, `coeff_gen_*.wl` wolfram scripts instructions on how to run are given in the beginning of the files. 
 To run `demo-script.wl` from the **root directory** of the repository type: 
 ```bash 
     wolfram -script Scripts/demo-script.wl N Path/to/outputfile
 ```
 where $N$ is the level and `outputfile` is the location where you want to save the output in a `.m` file.
+## Useful links
+...
 ## Citation
 ...
 ## License 
