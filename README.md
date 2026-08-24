@@ -16,7 +16,7 @@ We study the growth of massive $SO(9)$ super-representations in type II and type
 - No third-party packages are required.
 ## Usage
 ### Python Scripts
-Here are some instructions on how to run the python scripts from the **root directory** of this repository. Note that depending on how Python is installed and configured on the operating system you might need to use the command `python` or `python3` in order to run the scripts. Also all the commands below **assume that Python is available in your system PATH**.
+Here are some instructions on how to run the python scripts from the **root directory** of this repository. Note that depending on how Python is installed and configured on the operating system you might need to use the command `python` or `python3` in order to run the scripts. Also all the commands below **assume that Python is available in your system** `PATH`.
  - For the `partition_func_weyl_sparse.py` run: 
 ```bash 
     python Python/partition_func_weyl_sparse.py N
@@ -34,7 +34,7 @@ where $L$ $M$ $R$ and $S$ are the four Dynkin indices.  For multiple files run:
 ```bash 
     python Python/representation_finite_n_multirep.py N --rep-file FILE
 ```
-An example of FILE and the format is in `50_lowest_reps.py`. Again, you can run: 
+An example of `FILE` and the format is in `50_lowest_reps.py`. Again, you can run: 
 ```bash 
     python Python/representation_finite_n_multirep.py --help
 ```
@@ -61,7 +61,12 @@ To run from terminal on a Mac, add the following to your `.zprofile` file :
 ```bash
     PATH=$PATH:/Applications/Wolfram.app/Contents/MacOS
 ``` 
-To run from terminal on Windows, you have to have the directory containing `WolframKernel.exe` to your Windows `PATH`.
+To run from terminal on Windows, you have to have the directory containing `WolframKernel.exe` to your Windows `PATH`. For `math_Code_d_batch.wl`, `coeff_gen_*.wl` wolfram scripts instruction on how to run are given in the in the beginning of the files. 
+To run `demo-script.wl` from the **root directory of the repository** type: 
+```bash 
+    wolfram -script Scripts/demo-script.wl N Path/to/outputfile
+```
+where $N$ is the level and `outputfile` is the location where you want to save the output in a `.m` file.
 ## Citation
 ...
 ## License 
