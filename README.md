@@ -16,24 +16,46 @@ We study the growth of massive $SO(9)$ super-representations in type II and type
 - No third-party packages are required.
 ## Usage
 ### Python
-Here are some instructions on how to run the python scripts from the **root directory** of this repository:
+Here are some instructions on how to run the python scripts from the **root directory** of this repository. Note that depending on how Python is installed and configured on the operating system you might need to use the command `python` or `python3` in order to run the scripts. Also all the commands below **assume that Python is available in your system PATH**.
  - For the `partition_func_weyl_sparse.py` run: 
 ```bash 
     python Python/partition_func_weyl_sparse.py N
 ```
-or 
-```bash
-    Python/partition_func_weyl_sparse.py N
-``` 
-where N is the level (Note that the for these purposes, the first massive level is at N=0, so N=100 means the 101st level). Also one can run: 
+where $N$ is the level (Note that the for these purposes, the first massive level is at $N=0$, so $N=100$ means the 101st level). Also one can run: 
  ```bash
-    python partition_func_weyl_sparse.py --help
+    python Python/partition_func_weyl_sparse.py --help
  ```
-or 
-```bash 
-    python3 partition_func_weyl_sparse.py --help
-```
 to see information about the variety of flags that can be used in this script.
+ - For the `representation_finite_n_multirep.py` run: 
+```bash
+    python Python/representation_finite_n_multirep.py N L M R S
+```
+where L M R and S are the four Dynkin indices.  For multiple files run: 
+```bash 
+    python representation_finite_n_multirep.py N --rep-file FILE
+```
+An example of FILE and the format is in `50_lowest_reps.py`. Again, you can run: 
+```bash 
+    python representation_finite_n_multirep.py --help
+```
+to see all flags available.
+ - For the `partition_func_weyl_sparse_ord.py` run:
+```bash
+    python partition_func_weyl_sparse_ord.py N
+```
+where N is the level. To get the multiplicities for a single representation run: 
+```bash 
+    python partition_func_weyl_sparse_ord.py N --rep L,M,R,S
+```
+To get the multiplicities for multiple representations stored in a file run: 
+```bash 
+    python partition_func_weyl_sparse_ord.py N --reps-file FILE  
+```
+Note that the format for the representations is different than in the super-case (there are commas between the indices).  An example file with the format is `50_lowest_reps_ord.py`. Finally run:
+```bash 
+    python partition_func_weyl_sparse_ord.py --help
+```
+to see all flags.
 ## Citation
 ...
 ## License 
