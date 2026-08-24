@@ -7,7 +7,32 @@ This repository contains the Mathematica and Python code used in the project alo
 We study the growth of massive $SO(9)$ super-representations in type II and type I string theories.  We do this first directly by finding an empirical formula that specifies which representations appear at any level, and then compute the multiplicities from a refined partition function evaluated over finite fields up to level 501 for individual representations, and level 226 for all representations.   We then derive asymptotic formulae for the growth of any representation, which are constructed by integrating about the peaks of the refined partition function.  Using a Rademacher sum we can find very accurate approximations for the multiplicities of the representations.  Unlike the superstring partition function, which only receives contributions from the odd Rademacher terms, the multiplicities for any representation have contributions from both even and odd terms.  Finally, we apply the same techniques to the ordinary representations, where a simplified refined partition function allows for better computational speed and somewhat simplified expressions for the asymptotic approximations.
 
 ## Repository structure 
-...
+```text
+so9-partition-functions/
+├── Notebooks/
+│   ├── asymp_analysis.nb             # computes asymptotic behavior for super-representations and compares it to actual multiplicities
+│   ├── asymp_analysis_ordinary.nb    # similar to asymp_analysis.nb but for ordinary representations
+│   ├── demo-script.nb                # Mathematica version of the python code partition_func_weyl_sparse.py (no optimizations included)
+│   └── plots_sec3.nb                 # provides the data for the table and makes the 3D plot(s) shown in section 3
+│
+├── Python/
+│   ├── 50_lowest_reps.py
+│   ├── 50_lowest_reps_ord.py
+│   ├── partition_func_weyl_sparse.py       # generates multiplicities for super-representations
+│   ├── partition_func_weyl_sparse_ord.py   # computes multiplicities for ordinary representations
+│   └── representation_finite_n_multirep.py # computes multiplicities for 1 or more super-representations
+│
+├── Scripts/
+│   ├── coeff_gen_1.wl                # generating coefficients used in the 1st terms in the Rademacher sums
+│   ├── coeff_gen_2.wl                # generating coefficients used in the 2nd terms in the Rademacher sums
+│   ├── coeff_gen_3.wl                .
+│   ├── coeff_gen_4.wl                .
+│   ├── coeff_gen_5.wl                .
+│   ├── demo-script.wl                # script version of demo-script.nb
+│   └── math_Code_simplified_batch.wl # generates multiplicities for super-representations, up to level ~100
+│
+└── README.md
+```
 ## Requirements 
 ### Mathematica 
 - Wolfram Mathematica 15.0 (tested)
@@ -61,7 +86,7 @@ To run from terminal on a Mac, add the following to your `.zprofile` file :
 ```bash
     PATH=$PATH:/Applications/Wolfram.app/Contents/MacOS
 ``` 
-To run from terminal on Windows, you have to have the directory containing `WolframKernel.exe` to your Windows `PATH`. For `math_Code_d_batch.wl`, `coeff_gen_*.wl` wolfram scripts instruction on how to run are given in the in the beginning of the files. 
+To run from terminal on Windows, you have to have the directory containing `WolframKernel.exe` to your Windows `PATH`. For the `math_Code_d_batch.wl`, `coeff_gen_*.wl` wolfram scripts instructions on how to run are given in the in the beginning of the files. 
 To run `demo-script.wl` from the **root directory** of the repository type: 
 ```bash 
     wolfram -script Scripts/demo-script.wl N Path/to/outputfile
