@@ -15,7 +15,7 @@ We study the growth of massive $SO(9)$ super-representations in type II and type
 - Python 3.14.4 (tested)
 - No third-party packages are required.
 ## Usage
-### Python
+### Python Scripts
 Here are some instructions on how to run the python scripts from the **root directory** of this repository. Note that depending on how Python is installed and configured on the operating system you might need to use the command `python` or `python3` in order to run the scripts. Also all the commands below **assume that Python is available in your system PATH**.
  - For the `partition_func_weyl_sparse.py` run: 
 ```bash 
@@ -30,32 +30,38 @@ to see information about the variety of flags that can be used in this script.
 ```bash
     python Python/representation_finite_n_multirep.py N L M R S
 ```
-where L M R and S are the four Dynkin indices.  For multiple files run: 
+where $L$ $M$ $R$ and $S$ are the four Dynkin indices.  For multiple files run: 
 ```bash 
-    python representation_finite_n_multirep.py N --rep-file FILE
+    python Python/representation_finite_n_multirep.py N --rep-file FILE
 ```
 An example of FILE and the format is in `50_lowest_reps.py`. Again, you can run: 
 ```bash 
-    python representation_finite_n_multirep.py --help
+    python Python/representation_finite_n_multirep.py --help
 ```
 to see all flags available.
  - For the `partition_func_weyl_sparse_ord.py` run:
 ```bash
-    python partition_func_weyl_sparse_ord.py N
+    python Python/partition_func_weyl_sparse_ord.py N
 ```
-where N is the level. To get the multiplicities for a single representation run: 
+where $N$ is the level. To get the multiplicities for a single representation run: 
 ```bash 
-    python partition_func_weyl_sparse_ord.py N --rep L,M,R,S
+    python Python/partition_func_weyl_sparse_ord.py N --rep L,M,R,S
 ```
 To get the multiplicities for multiple representations stored in a file run: 
 ```bash 
-    python partition_func_weyl_sparse_ord.py N --reps-file FILE  
+    python Python/partition_func_weyl_sparse_ord.py N --reps-file FILE  
 ```
 Note that the format for the representations is different than in the super-case (there are commas between the indices).  An example file with the format is `50_lowest_reps_ord.py`. Finally run:
 ```bash 
-    python partition_func_weyl_sparse_ord.py --help
+    python Python/partition_func_weyl_sparse_ord.py --help
 ```
 to see all flags.
+### Wolfram Scripts
+To run from terminal on a Mac, add the following to your `.zprofile` file :
+```bash
+    PATH=$PATH:/Applications/Wolfram.app/Contents/MacOS
+``` 
+To run from terminal on Windows, you have to have the directory containing `WolframKernel.exe` to your Windows `PATH`.
 ## Citation
 ...
 ## License 
