@@ -62,7 +62,7 @@ To run from terminal on a Mac, add the following to your `.zprofile` file :
     PATH=$PATH:/Applications/Wolfram.app/Contents/MacOS
 ``` 
 To run from terminal on Windows, you have to have the directory containing `WolframKernel.exe` to your Windows `PATH`. For `math_Code_d_batch.wl`, `coeff_gen_*.wl` wolfram scripts instruction on how to run are given in the in the beginning of the files. 
-To run `demo-script.wl` from the **root directory of the repository** type: 
+To run `demo-script.wl` from the **root directory** of the repository type: 
 ```bash 
     wolfram -script Scripts/demo-script.wl N Path/to/outputfile
 ```
