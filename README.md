@@ -15,7 +15,12 @@ We study the growth of massive $SO(9)$ super-representations in type II and type
 - Python 3.14.4 (tested)
 - No third-party packages are required.
 ## Usage
-...
+### Python
+    Here are some instructions on how to run the python scripts of this repository:
+    - For the `partition_func_weyl_sparse.py` run: 
+    ```bash 
+    python (or python3) partition_func_weyl_sparse.py N
+    where N is the level (Note that the for these purposes, the first massive level is at N=0, so N=100 means the 101st level).
 ## Citation
 ...
 ## License 
