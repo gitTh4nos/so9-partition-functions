@@ -95,6 +95,26 @@ To run `demo-script.wl` from the **root directory** of the repository type:
     wolfram -script Scripts/demo-script.wl N Path/to/outputfile
 ```
 where $N$ is the level and `outputfile` is the location where you want to save the output in a `.m` file.
+## Large files and Git LFS
+This repository uses [Git Large File Storage (Git LFS)](https://git-lfs.com/) for several large Mathematica data files.
+
+To obtain the complete files, make sure Git and Git LFS are installed before cloning the repository:
+
+```bash
+git lfs install
+git clone https://github.com/gitTh4nos/so9-partition-functions.git
+cd so9-partition-functions
+git lfs pull
+```
+
+The repository's large files include:
+
+* `DataFiles/Ordinary/level_201.m`
+* `DataFiles/Super/level_200.m`
+* `DataFiles/Super/level_225.m`
+
+**Note:** Downloading the repository using GitHub's **Code → Download ZIP** option may not provide the actual Git LFS files. For the complete dataset, clone the repository with Git LFS installed or download the corresponding release/archive from Zenodo.
+
 ## Useful links
 ...
 ## Citation
