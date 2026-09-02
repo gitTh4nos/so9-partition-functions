@@ -98,7 +98,7 @@ where $N$ is the level and `outputfile` is the location where you want to save t
 ## Large files and Git LFS
 This repository uses [Git Large File Storage (Git LFS)](https://git-lfs.com/) for several large Mathematica data files.
 
-To obtain the complete files, make sure Git and Git LFS are installed before cloning the repository:
+To obtain the complete files, make sure [Git](https://git-scm.com/) and [Git LFS](https://git-lfs.com/) are installed before cloning the repository:
 
 ```bash
 git lfs install
