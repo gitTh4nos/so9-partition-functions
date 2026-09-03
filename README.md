@@ -33,7 +33,7 @@ so9-partition-functions/
 │
 └── README.md
 ```
-Data files produced by the python codes and the Wolfram scripts are provided in `DataFiles/`
+Data files produced by the python code and the Wolfram scripts are provided in `DataFiles/`
 and the reader can skip directly to the notebooks if desired.
 
 ## Requirements 
