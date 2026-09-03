@@ -117,7 +117,8 @@ The repository's large files include:
 
 ## Useful links
 * **Paper:** [arXiv](YOUR_ARXIV_LINK)
-* **Data and archived code:** [Zenodo](YOUR_ZENODO_LINK)
+* **Code and data:** [Zenodo](https://doi.org/10.5281/zenodo.21628613)
+
 
 ## Citation
 ...
