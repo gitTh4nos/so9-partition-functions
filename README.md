@@ -116,7 +116,9 @@ The repository's large files include:
 **Note:** Downloading the repository using GitHub's **Code → Download ZIP** option may not provide the actual Git LFS files. For the complete dataset, clone the repository with Git LFS installed or download the corresponding release/archive from Zenodo.
 
 ## Useful links
-...
+* **Paper:** [arXiv](YOUR_ARXIV_LINK)
+* **Data and archived code:** [Zenodo](YOUR_ZENODO_LINK)
+
 ## Citation
 ...
 ## License 
