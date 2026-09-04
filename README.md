@@ -116,12 +116,25 @@ The repository's large files include:
 **Note:** Downloading the repository using GitHub's **Code → Download ZIP** option may not provide the actual Git LFS files. For the complete dataset, clone the repository with Git LFS installed or download the corresponding release/archive from Zenodo.
 
 ## Useful links
-* **Paper:** arxiv (will be added later on...)
-* **Code and data:** [Zenodo](https://doi.org/10.5281/zenodo.21628613)
+* **Paper:** [arxiv](https://doi.org/10.48550/arXiv.2609.04107)
+
+* **Code and data also available on:** [Zenodo](https://doi.org/10.5281/zenodo.21628613)
 
 
 ## Citation
-To be added later on...
+If you use this repository or its results in your work, please cite:
+```
+@article{Georgoudis:2026pzy,
+  author       = {Georgoudis, Alessandro and Minahan, Joseph A. and Str{\"o}m, Gustav and Zoumis, Athanasios},
+  title        = "{The growth of $SO(9)$ super-representations in Type II string theory}",
+  eprint       = "2609.04107",
+  archivePrefix = "arXiv",
+  primaryClass = "hep-th",
+  reportNumber = "UUITP-13/26, MIT-CTP/6056, QMUL-PH-26-24",
+  month        = "9",
+  year         = "2026"
+}
+```
 ## License 
 This work is licensed under the **Creative Commons Attribution 4.0 International (CC BY 4.0)** license.
 
